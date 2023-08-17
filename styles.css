@@ -1,14 +1,100 @@
+:root {
+    --main-color: rgb(255, 111, 0)
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0;
+}
+
+
+.header-image h2 {
+    font-size: 5rem;
+}
+
+
+header h1 {
+    letter-spacing: 0.1rem;
+    font-size: 6rem;
+    font-family: 'Dela Gothic One', cursive;
+    color: black;
+    text-align: center;
+}
+
+.header-image {
+    background-image: url("./src/Tonkotsu-Ramen-FT-BLOG1122-8fe6c12d609a4fd4ab246bea3aae140e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.japanese-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+}
+.japanese-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+.slogan {
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    color: black
+}
+
+
+
+
+
+
+
 .ramen-recipes {
     display: flex;
-    width: 100%;
-    margin: 10px;
-    
 }
 .ramen-bowl img{
     width: 100%;
+    margin: 10px;
     justify-content: space-between;
-    
 }
 .ramen-bowl p {
     text-align: center;
+}
+
+
+
+
+@media (max-width: 1362px) {
+    .japanese-container {
+        text-align: center;
+        margin-top: 350px;
+    }
+    .header-image h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 843px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .slogan {
+    display: none; }
+
+.header-image h2 {
+font-size: 3.5rem;
+color: white;
+align-items: center;
+}
+
 }
