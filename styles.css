@@ -1,0 +1,14 @@
+.ramen-recipes {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    
+}
+.ramen-bowl img{
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.ramen-bowl p {
+    text-align: center;
+}
