@@ -30,6 +30,7 @@ header h1 {
     display: flex;
     align-content: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 
@@ -47,9 +48,12 @@ header h1 {
 }
 
 .slogan {
-    font-family: 'M PLUS 1p', sans-serif;
-    text-align: center;
-    color: black
+
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    margin: 150px 30px;
+    color: black;
 }
 
 
@@ -59,19 +63,45 @@ header h1 {
 
 
 .ramen-recipes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ramen-bowl { 
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.ramen-bowl img{
-    width: 100%;
-    margin: 10px;
-    justify-content: space-between;
+
+.ramen-bowl img {
+width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
-.ramen-bowl p {
-    text-align: center;
+
+.ramen-bowl h2 {
+    font-family: 'Dela Gothic One', cursive;
+        font-size: 1.5rem;
 }
 
 
 
+
+
+@media (min-width: 844px) {
+    .ramen-bowl {
+        flex-basis: calc(25% - 20px);
+    }
+}
+@media (max-width: 843px) {
+    .ramen-bowl {
+        flex-basis: calc(50% - 20px);
+        height: 400px;
+    }
+}
 
 @media (max-width: 1362px) {
     .japanese-container {
@@ -81,15 +111,21 @@ header h1 {
     .header-image h2 {
         font-size: 4rem;
     }
+    .slogan {
+        font-size: 4rem;
+    }
 }
+
 
 @media (max-width: 843px) {
     header h1 {
         font-size: 4rem;
     }
+        .slogan {
+            font-size: 3rem;
+        }
 
-    .slogan {
-    display: none; }
+
 
 .header-image h2 {
 font-size: 3.5rem;
