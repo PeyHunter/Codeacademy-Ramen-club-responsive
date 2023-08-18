@@ -52,28 +52,46 @@ header h1 {
     font-family: 'Dela Gothic One', cursive;
     font-size: 6rem;
     letter-spacing: 0.1rem;
-    margin: 150px 30px;
+    margin: 150px 0px;
     color: black;
+    text-align: center;
 }
 
 
+.footer-image {
+    background-image: url("src/03153307-gettyimages-1400840028_cover_1600x1067.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
+}
+
+.footer-image p {
+    margin-top: 20px;
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+}
 
 
 
 .ramen-recipes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 30px;
-    gap: 10px;
+    margin: 15px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .ramen-bowl { 
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .ramen-bowl img {
@@ -85,23 +103,23 @@ width: 100%;
 .ramen-bowl h2 {
     font-family: 'Dela Gothic One', cursive;
         font-size: 1.5rem;
+        margin: 10px 0 ;
 }
 
-
-
-
-
-@media (min-width: 844px) {
-    .ramen-bowl {
-        flex-basis: calc(25% - 20px);
-    }
+.ramen-bowl ul {
+font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 0px;
+    list-style: none;
 }
-@media (max-width: 843px) {
-    .ramen-bowl {
-        flex-basis: calc(50% - 20px);
-        height: 400px;
-    }
-}
+
+.ramen-bowl li::before {
+    content: "- ";}
+
+
+
+
+
+
 
 @media (max-width: 1362px) {
     .japanese-container {
@@ -114,6 +132,9 @@ width: 100%;
     .slogan {
         font-size: 4rem;
     }
+    .ramen-recipes {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -124,13 +145,14 @@ width: 100%;
         .slogan {
             font-size: 3rem;
         }
-
-
-
-.header-image h2 {
-font-size: 3.5rem;
-color: white;
-align-items: center;
-}
+        .header-image h2 {
+            font-size: 3.5rem;
+            color: white;
+            align-items: center;
+        }
+        .ramen-recipes img {
+            height: 400px;
+        }
+       
 
 }
